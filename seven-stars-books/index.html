@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Seven Stars Books | Lanzamientos literarios de principio a fin</title>
+  <meta name="description" content="Seven Stars Books acompaña a escritores, iglesias y empresas desde el manuscrito hasta el lanzamiento: edición, diseño, publicación, audio, video y campaña digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="header__inner wrap">
+      <a href="#top" class="header__logo" aria-label="Seven Stars Books, inicio">
+        <img src="assets/img/logo.webp" alt="Seven Stars Books" width="900" height="175">
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#estrellas" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#proceso" data-i18n="nav.process">Proceso</a></li>
+          <li><a href="#para-quien" data-i18n="nav.who">Para quién</a></li>
+          <li><a href="#libreria" data-i18n="nav.books">Librería</a></li>
+          <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
+          <li class="nav__cta-mobile"><a href="#contacto" class="btn btn--dark" data-i18n="cta.start">Iniciar mi proyecto</a></li>
+        </ul>
+      </nav>
+      <div class="header__tools">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="cart-btn" id="cartOpen" aria-label="Abrir carrito" data-i18n-attr="aria-label:cart.open">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 7Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <a href="#contacto" class="btn btn--dark header__cta" data-i18n="cta.start">Iniciar mi proyecto</a>
+        <button type="button" class="burger" id="burger" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú" data-i18n-attr="aria-label:nav.toggle">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner wrap">
+        <div class="hero__text">
+          <h1 class="hero__title" data-i18n="hero.title">Tu libro merece un lanzamiento, no solo una impresión.</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Seven Stars Books acompaña a escritores, iglesias y empresas desde el manuscrito hasta el día en que el libro llega a sus lectores: edición, diseño, publicación, audio, video y campaña, coordinados por un solo equipo.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--dark" data-i18n="cta.start">Iniciar mi proyecto</a>
+            <a href="#libreria" class="btn btn--line" data-i18n="hero.cta2">Conocer Buen día invencible</a>
+          </div>
+          <div class="hero__byline">
+            <img src="assets/img/steven-bravo.webp" alt="" width="48" height="48">
+            <p data-i18n="hero.byline">Dirigido por <strong>Steven Bravo</strong>, autor y conferencista.</p>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img class="hero__rays" src="assets/img/rayos-centro.webp" alt="" aria-hidden="true" width="1600" height="1868">
+          <a href="#libreria" class="book book--hero" data-tilt aria-label="Buen día invencible, ver en la librería" data-i18n-attr="aria-label:hero.bookLabel">
+            <img src="assets/img/libro-buen-dia-invencible.webp" alt="Portada del libro Buen día invencible de Steven Bravo" data-i18n-attr="alt:alt.cover1" width="700" height="1050">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="problem">
+      <div class="wrap">
+        <h2 class="problem__title" data-i18n="problem.title">Escribir el libro es solo la primera mitad.</h2>
+        <p class="problem__lead" data-i18n="problem.lead">La otra mitad decide si alguien lo lee: un manuscrito bien editado, una portada que compita en una vitrina, una edición impresa y digital sin errores y un lanzamiento que prepare a la audiencia. Ahí es donde muchos proyectos terminan guardados en una caja.</p>
+        <ul class="problem__list">
+          <li data-i18n="problem.i1">El manuscrito llega a la imprenta sin una segunda lectura profesional.</li>
+          <li data-i18n="problem.i2">La portada se resuelve a última hora y no dice de qué trata el libro.</li>
+          <li data-i18n="problem.i3">El libro sale, pero nadie preparó a los lectores para recibirlo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AUTOR -->
+    <section class="author" id="autor">
+      <div class="author__inner wrap">
+        <figure class="author__photo">
+          <img src="assets/img/steven-bravo.webp" alt="Steven Bravo, autor y conferencista, fundador de Seven Stars Books" data-i18n-attr="alt:alt.author" width="720" height="1046" loading="lazy">
+        </figure>
+        <div class="author__text">
+          <h2 data-i18n="author.title">Antes de ofrecerlo, lo hice con mis propios libros.</h2>
+          <p data-i18n="author.p1">Soy Steven Bravo, autor y conferencista. Publiqué <em>Buen día invencible</em> y otros cuatro títulos pasando por cada etapa: reescribir, corregir, elegir la portada, imprimir, presentar en auditorios y vender ejemplar por ejemplar.</p>
+          <p data-i18n="author.p2">Seven Stars Books nace de ese recorrido. Es el acompañamiento que me hubiera gustado tener, ahora con un equipo detrás: editorial, estudio de audio y video y marketing digital, para que tu libro no dependa de la suerte.</p>
+          <p class="author__sign">Steven Bravo</p>
+          <p class="author__role" data-i18n="author.role">Autor, conferencista y fundador de Seven Stars Books</p>
+          <ul class="author__shelf" aria-label="Libros publicados por Steven Bravo" data-i18n-attr="aria-label:author.shelf">
+            <li><a href="#libreria"><img src="assets/img/libro-buen-dia-invencible.webp" alt="Buen día invencible" width="700" height="1050" loading="lazy"></a></li>
+            <li><a href="#libreria"><img src="assets/img/libro-cumbres-interiores.webp" alt="Cumbres interiores" width="700" height="1050" loading="lazy"></a></li>
+            <li><a href="#libreria"><img src="assets/img/libro-la-ruta-del-proposito.webp" alt="La ruta del propósito" width="700" height="1050" loading="lazy"></a></li>
+            <li><a href="#libreria"><img src="assets/img/libro-luz-en-la-noche.webp" alt="Luz en la noche" width="700" height="1050" loading="lazy"></a></li>
+            <li><a href="#libreria"><img src="assets/img/libro-aguas-quietas.webp" alt="Aguas quietas" width="700" height="1050" loading="lazy"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSTELACIÓN -->
+    <section class="stars" id="estrellas">
+      <img class="stars__rays" src="assets/img/rayos-horizonte-oro.webp" alt="" aria-hidden="true" width="1600" height="1141" loading="lazy">
+      <div class="wrap stars__inner">
+        <header class="stars__head">
+          <h2 data-i18n="stars.title">Siete estrellas, un lanzamiento completo.</h2>
+          <p data-i18n="stars.lead">Cada estrella es una etapa. Las tres primeras son el corazón editorial; las otras cuatro hacen que el libro se vea, se escuche y se venda.</p>
+        </header>
+
+        <div class="constellation" id="constellation">
+          <svg class="constellation__svg" viewBox="0 0 1400 200" preserveAspectRatio="none" aria-hidden="true">
+            <polyline class="constellation__line" points="100,120 300,60 500,110 700,40 900,130 1100,70 1300,100" />
+          </svg>
+          <div class="constellation__groups" aria-hidden="true">
+            <span class="g g--books">Seven Stars Books</span>
+            <span class="g g--studio">Seven Stars Studio</span>
+            <span class="g g--mkt">Seven Stars Marketing</span>
+          </div>
+          <ol class="constellation__list">
+            <li class="cs cs--major" style="--y:120">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">I</span>
+              <h3 data-i18n="s1.t">Edición y corrección</h3>
+              <p data-i18n="s1.d">Lectura crítica, corrección de estilo y ortotipográfica.</p>
+              <span class="cs__house">Seven Stars Books</span>
+            </li>
+            <li class="cs cs--major" style="--y:60">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">II</span>
+              <h3 data-i18n="s2.t">Diseño editorial</h3>
+              <p data-i18n="s2.d">Portada, maquetación interior y versión digital.</p>
+              <span class="cs__house">Seven Stars Books</span>
+            </li>
+            <li class="cs cs--major" style="--y:110">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">III</span>
+              <h3 data-i18n="s3.t">Publicación</h3>
+              <p data-i18n="s3.d">ISBN, impresión por tiraje o bajo demanda y distribución en Amazon.</p>
+              <span class="cs__house">Seven Stars Books</span>
+            </li>
+            <li class="cs" style="--y:40">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">IV</span>
+              <h3 data-i18n="s4.t">Booktrailer y video</h3>
+              <p data-i18n="s4.d">Piezas para redes, presentaciones y entrevistas.</p>
+              <span class="cs__house">Seven Stars Studio</span>
+            </li>
+            <li class="cs" style="--y:130">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">V</span>
+              <h3 data-i18n="s5.t">Audiolibro y música</h3>
+              <p data-i18n="s5.d">Grabación de voz en estudio, edición y música original.</p>
+              <span class="cs__house">Seven Stars Studio</span>
+            </li>
+            <li class="cs" style="--y:70">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">VI</span>
+              <h3 data-i18n="s6.t">Web de autor y tienda</h3>
+              <p data-i18n="s6.d">Un sitio propio para vender el libro y agendar conferencias.</p>
+              <span class="cs__house">Seven Stars Marketing</span>
+            </li>
+            <li class="cs" style="--y:100">
+              <span class="cs__star" aria-hidden="true"></span>
+              <span class="cs__num">VII</span>
+              <h3 data-i18n="s7.t">Campaña de lanzamiento</h3>
+              <p data-i18n="s7.d">Preventa, pauta en Meta y Google y contenido para redes.</p>
+              <span class="cs__house">Seven Stars Marketing</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISIONES -->
+    <section class="houses" aria-labelledby="houses-title">
+      <div class="wrap">
+        <h2 id="houses-title" class="houses__title" data-i18n="houses.title">Una editorial al centro, con estudio y equipo digital propios.</h2>
+        <div class="houses__grid">
+          <article class="house house--main">
+            <div class="house__media">
+              <img src="assets/img/s-publicacion.webp" alt="Lomos de libros impresos alineados en una estantería" data-i18n-attr="alt:alt.pub" width="900" height="600" loading="lazy">
+            </div>
+            <div class="house__body">
+              <h3>Seven Stars Books</h3>
+              <p class="house__kind" data-i18n="houses.books.kind">Editorial</p>
+              <p data-i18n="houses.books.p">El centro del proyecto. Tu manuscrito pasa por edición, diseño y publicación con el criterio de alguien que ya publicó y sabe qué se nota en una vitrina.</p>
+              <ul class="house__services">
+                <li><img src="assets/img/s-correccion.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.books.s1">Edición y corrección</span></li>
+                <li><img src="assets/img/s-diseno.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.books.s2">Portada y maquetación</span></li>
+                <li><img src="assets/img/s-publicacion.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.books.s3">Publicación impresa y digital</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="house">
+            <div class="house__media">
+              <img src="assets/img/s-studio.webp" alt="Estudio de grabación con guitarras y consola de audio" data-i18n-attr="alt:alt.studio" width="1400" height="934" loading="lazy">
+            </div>
+            <div class="house__body">
+              <h3>Seven Stars Studio</h3>
+              <p class="house__kind" data-i18n="houses.studio.kind">Audio y video</p>
+              <p data-i18n="houses.studio.p">Booktrailers, audiolibros y música original para la presentación del libro o para el ministerio que lo acompaña.</p>
+              <ul class="house__services">
+                <li><img src="assets/img/s-video.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.studio.s1">Booktrailer y video</span></li>
+                <li><img src="assets/img/s-audio.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.studio.s2">Audiolibro y música</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="house">
+            <div class="house__media">
+              <img src="assets/img/s-web.webp" alt="Portátil con un panel de métricas de ventas" data-i18n-attr="alt:alt.web" width="900" height="600" loading="lazy">
+            </div>
+            <div class="house__body">
+              <h3>Seven Stars Marketing</h3>
+              <p class="house__kind" data-i18n="houses.mkt.kind">Estrategia digital</p>
+              <p data-i18n="houses.mkt.p">Web de autor, tienda en línea y campañas pagadas para que el lanzamiento llegue a las personas correctas.</p>
+              <ul class="house__services">
+                <li><img src="assets/img/s-web.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.mkt.s1">Web de autor y tienda</span></li>
+                <li><img src="assets/img/s-campana.webp" alt="" width="900" height="600" loading="lazy"><span data-i18n="houses.mkt.s2">Campaña de lanzamiento</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="process" id="proceso">
+      <div class="wrap">
+        <h2 class="process__title" data-i18n="process.title">Del primer café al día del lanzamiento.</h2>
+        <ol class="process__steps">
+          <li>
+            <span class="process__n">1</span>
+            <h3 data-i18n="p1.t">Conversación inicial</h3>
+            <p data-i18n="p1.d">Leemos tu manuscrito o escuchamos tu idea y entendemos para quién es el libro.</p>
+          </li>
+          <li>
+            <span class="process__n">2</span>
+            <h3 data-i18n="p2.t">Plan y cotización</h3>
+            <p data-i18n="p2.d">Te proponemos solo las etapas que necesitas, con tiempos y costos por escrito.</p>
+          </li>
+          <li>
+            <span class="process__n">3</span>
+            <h3 data-i18n="p3.t">Producción</h3>
+            <p data-i18n="p3.d">Edición, diseño, audio y video avanzan en paralelo con un solo responsable.</p>
+          </li>
+          <li>
+            <span class="process__n">4</span>
+            <h3 data-i18n="p4.t">Publicación</h3>
+            <p data-i18n="p4.d">ISBN, archivos finales, impresión y publicación en tiendas digitales.</p>
+          </li>
+          <li>
+            <span class="process__n">5</span>
+            <h3 data-i18n="p5.t">Lanzamiento</h3>
+            <p data-i18n="p5.d">Preventa, campaña, evento de presentación y seguimiento de ventas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN -->
+    <section class="who" id="para-quien">
+      <div class="wrap">
+        <h2 class="who__title" data-i18n="who.title">Para quién trabajamos.</h2>
+        <div class="tabs" role="tablist" aria-label="Públicos" data-i18n-attr="aria-label:who.tabs">
+          <button type="button" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" class="tabs__btn" data-i18n="who.t1">Escritores</button>
+          <button type="button" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1" class="tabs__btn" data-i18n="who.t2">Iglesias y ministerios</button>
+          <button type="button" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1" class="tabs__btn" data-i18n="who.t3">Empresas</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+          <img src="assets/img/a-escritores.webp" alt="Pluma estilográfica sobre una libreta" data-i18n-attr="alt:alt.writers" width="900" height="600" loading="lazy">
+          <div class="panel__text">
+            <h3 data-i18n="who.p1.t">Escritores con un proyecto grande en mente</h3>
+            <p data-i18n="who.p1.d">Novela, ensayo, crecimiento personal o memorias. Si el libro es la puerta a conferencias, cursos o una marca personal, lo tratamos como un lanzamiento y no como un trámite.</p>
+            <ul>
+              <li data-i18n="who.p1.l1">Lectura crítica del manuscrito</li>
+              <li data-i18n="who.p1.l2">Portada y edición pensadas para vender</li>
+              <li data-i18n="who.p1.l3">Web de autor y preventa</li>
+            </ul>
+            <a href="#contacto" class="btn btn--dark" data-i18n="who.p1.cta">Hablar de mi libro</a>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+          <img src="assets/img/a-iglesias.webp" alt="Congregación con las manos levantadas durante un servicio de alabanza" data-i18n-attr="alt:alt.church" width="900" height="600" loading="lazy">
+          <div class="panel__text">
+            <h3 data-i18n="who.p2.t">Iglesias y ministerios</h3>
+            <p data-i18n="who.p2.d">El libro del pastor, un devocional para la congregación o el álbum de alabanza que acompaña una serie de predicaciones. Todo producido con la misma calidad y una sola coordinación.</p>
+            <ul>
+              <li data-i18n="who.p2.l1">Devocionales y libros pastorales</li>
+              <li data-i18n="who.p2.l2">Audiolibro y música de alabanza original</li>
+              <li data-i18n="who.p2.l3">Lanzamiento para la congregación y las redes</li>
+            </ul>
+            <a href="#contacto" class="btn btn--dark" data-i18n="who.p2.cta">Hablar del proyecto del ministerio</a>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+          <img src="assets/img/a-empresas.webp" alt="Equipo de trabajo revisando ideas en una oficina" data-i18n-attr="alt:alt.business" width="900" height="600" loading="lazy">
+          <div class="panel__text">
+            <h3 data-i18n="who.p3.t">Empresas e instituciones</h3>
+            <p data-i18n="who.p3.d">La historia de la compañía, el método de su fundador o un libro corporativo convertido en una pieza que posiciona la marca y que el equipo comercial puede entregar con orgullo.</p>
+            <ul>
+              <li data-i18n="who.p3.l1">Libros corporativos y memorias institucionales</li>
+              <li data-i18n="who.p3.l2">Video y piezas de marca a partir del libro</li>
+              <li data-i18n="who.p3.l3">Distribución en eventos y canales digitales</li>
+            </ul>
+            <a href="#contacto" class="btn btn--dark" data-i18n="who.p3.cta">Hablar del libro de la empresa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIBRERÍA -->
+    <section class="shop" id="libreria">
+      <img class="shop__rays" src="assets/img/rayos-horizonte.webp" alt="" aria-hidden="true" width="1600" height="1141" loading="lazy">
+      <div class="wrap">
+        <header class="shop__head">
+          <h2 data-i18n="shop.title">Los libros de Steven Bravo.</h2>
+          <p data-i18n="shop.lead">Cada uno pasó por el mismo proceso que ofrecemos. Léelos como muestra de lo que podemos hacer con tu libro, o simplemente porque te harán bien.</p>
+        </header>
+
+        <article class="feature" data-product="bdi">
+          <div class="feature__book">
+            <div class="book book--feature" data-tilt>
+              <img src="assets/img/libro-buen-dia-invencible.webp" alt="Portada del libro Buen día invencible de Steven Bravo" data-i18n-attr="alt:alt.cover1" width="700" height="1050" loading="lazy">
+            </div>
+          </div>
+          <div class="feature__info">
+            <h3 class="feature__title">Buen día invencible</h3>
+            <p class="feature__sub" data-i18n="bdi.sub">Cada mañana es una decisión</p>
+            <p data-i18n="bdi.syn">Un libro para empezar el día con dirección. En capítulos breves, Steven Bravo comparte las prácticas, historias y decisiones que lo sostuvieron en sus temporadas más difíciles, y propone una rutina sencilla para que cada mañana cuente.</p>
+            <dl class="feature__specs">
+              <div><dt data-i18n="bdi.k1">Páginas</dt><dd>192</dd></div>
+              <div><dt data-i18n="bdi.k2">Idioma</dt><dd data-i18n="bdi.v2">Español</dd></div>
+              <div><dt data-i18n="bdi.k3">Envío</dt><dd data-i18n="bdi.v3">Colombia e internacional</dd></div>
+            </dl>
+            <fieldset class="format">
+              <legend data-i18n="bdi.format">Formato</legend>
+              <label><input type="radio" name="bdi-format" value="print" checked> <span data-i18n="fmt.print">Impreso</span> <b class="price" data-cop="59000" data-usd="16"></b></label>
+              <label><input type="radio" name="bdi-format" value="ebook"> <span data-i18n="fmt.ebook">Digital (ePub y PDF)</span> <b class="price" data-cop="29000" data-usd="8"></b></label>
+            </fieldset>
+            <div class="feature__buy">
+              <div class="qty">
+                <button type="button" class="qty__btn" data-qty="-1" aria-label="Restar uno" data-i18n-attr="aria-label:qty.minus">−</button>
+                <input type="number" id="bdiQty" value="1" min="1" max="20" aria-label="Cantidad" data-i18n-attr="aria-label:qty.label">
+                <button type="button" class="qty__btn" data-qty="1" aria-label="Sumar uno" data-i18n-attr="aria-label:qty.plus">+</button>
+              </div>
+              <button type="button" class="btn btn--dark" id="bdiAdd" data-i18n="shop.add">Agregar al carrito</button>
+              <button type="button" class="btn btn--gold" id="bdiBuy" data-i18n="shop.buy">Comprar ahora</button>
+            </div>
+          </div>
+        </article>
+
+        <ul class="catalog">
+          <li class="product" data-id="ci">
+            <div class="book book--small"><img src="assets/img/libro-cumbres-interiores.webp" alt="Portada del libro Cumbres interiores" data-i18n-attr="alt:alt.cover2" width="700" height="1050" loading="lazy"></div>
+            <h3>Cumbres interiores</h3>
+            <p data-i18n="ci.d">Lo que se aprende antes de llegar arriba.</p>
+            <div class="product__foot"><b class="price" data-cop="52000" data-usd="14"></b><button type="button" class="btn btn--line btn--sm" data-add="ci" data-i18n="shop.addShort">Agregar</button></div>
+          </li>
+          <li class="product" data-id="rp">
+            <div class="book book--small"><img src="assets/img/libro-la-ruta-del-proposito.webp" alt="Portada del libro La ruta del propósito" data-i18n-attr="alt:alt.cover3" width="700" height="1050" loading="lazy"></div>
+            <h3>La ruta del propósito</h3>
+            <p data-i18n="rp.d">Vivir con dirección, no en automático.</p>
+            <div class="product__foot"><b class="price" data-cop="55000" data-usd="15"></b><button type="button" class="btn btn--line btn--sm" data-add="rp" data-i18n="shop.addShort">Agregar</button></div>
+          </li>
+          <li class="product" data-id="ln">
+            <div class="book book--small"><img src="assets/img/libro-luz-en-la-noche.webp" alt="Portada del libro Luz en la noche" data-i18n-attr="alt:alt.cover4" width="700" height="1050" loading="lazy"></div>
+            <h3>Luz en la noche</h3>
+            <p data-i18n="ln.d">Fe para los días que no se entienden.</p>
+            <div class="product__foot"><b class="price" data-cop="49000" data-usd="13"></b><button type="button" class="btn btn--line btn--sm" data-add="ln" data-i18n="shop.addShort">Agregar</button></div>
+          </li>
+          <li class="product" data-id="aq">
+            <div class="book book--small"><img src="assets/img/libro-aguas-quietas.webp" alt="Portada del libro Aguas quietas" data-i18n-attr="alt:alt.cover5" width="700" height="1050" loading="lazy"></div>
+            <h3>Aguas quietas</h3>
+            <p data-i18n="aq.d">21 devocionales para recuperar la calma.</p>
+            <div class="product__foot"><b class="price" data-cop="45000" data-usd="12"></b><button type="button" class="btn btn--line btn--sm" data-add="aq" data-i18n="shop.addShort">Agregar</button></div>
+          </li>
+        </ul>
+        <p class="demo-note" data-i18n="shop.note">Títulos, portadas y precios de ejemplo para esta propuesta.</p>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="plans" id="planes">
+      <div class="wrap">
+        <header class="plans__head">
+          <h2 data-i18n="plans.title">Empieza por donde estás.</h2>
+          <p data-i18n="plans.lead">Puedes contratar el proceso completo o solo la etapa que te falta. Cotizamos según la extensión del manuscrito y los servicios que elijas.</p>
+        </header>
+        <div class="plans__grid">
+          <article class="plan">
+            <h3 data-i18n="plan1.t">Esencial</h3>
+            <p class="plan__for" data-i18n="plan1.f">Para tener el libro listo y publicado.</p>
+            <ul>
+              <li data-i18n="plan1.l1">Corrección de estilo y ortotipográfica</li>
+              <li data-i18n="plan1.l2">Diseño de portada</li>
+              <li data-i18n="plan1.l3">Maquetación impresa y digital</li>
+              <li data-i18n="plan1.l4">ISBN y publicación en Amazon</li>
+            </ul>
+            <a href="#contacto" class="btn btn--line" data-plan="Esencial" data-i18n="plan1.cta">Cotizar Esencial</a>
+          </article>
+          <article class="plan plan--featured">
+            <h3 data-i18n="plan2.t">Lanzamiento</h3>
+            <p class="plan__for" data-i18n="plan2.f">Para publicar y hacer que se note.</p>
+            <ul>
+              <li data-i18n="plan2.l0">Todo lo del plan Esencial</li>
+              <li data-i18n="plan2.l1">Impresión del primer tiraje</li>
+              <li data-i18n="plan2.l2">Booktrailer para redes</li>
+              <li data-i18n="plan2.l3">Web de autor con tienda</li>
+              <li data-i18n="plan2.l4">Campaña de preventa</li>
+            </ul>
+            <a href="#contacto" class="btn btn--gold" data-plan="Lanzamiento" data-i18n="plan2.cta">Cotizar Lanzamiento</a>
+          </article>
+          <article class="plan">
+            <h3 data-i18n="plan3.t">Siete Estrellas</h3>
+            <p class="plan__for" data-i18n="plan3.f">Las siete etapas con un solo equipo.</p>
+            <ul>
+              <li data-i18n="plan3.l0">Todo lo del plan Lanzamiento</li>
+              <li data-i18n="plan3.l1">Audiolibro grabado en estudio</li>
+              <li data-i18n="plan3.l2">Música original para el lanzamiento</li>
+              <li data-i18n="plan3.l3">Campaña completa en Meta y Google</li>
+              <li data-i18n="plan3.l4">Acompañamiento del evento de presentación</li>
+            </ul>
+            <a href="#contacto" class="btn btn--line" data-plan="Siete Estrellas" data-i18n="plan3.cta">Cotizar Siete Estrellas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="preguntas">
+      <div class="wrap faq__inner">
+        <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+        <div class="faq__list">
+          <details>
+            <summary data-i18n="faq.q1">¿Conservo los derechos de mi libro?</summary>
+            <p data-i18n="faq.a1">Sí. Los derechos de autor y las regalías son tuyos. Seven Stars Books presta el servicio editorial y de producción; el libro sigue siendo de quien lo escribió.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">¿Puedo contratar solo una parte del proceso?</summary>
+            <p data-i18n="faq.a2">Sí. Hay autores que llegan con el libro corregido y solo necesitan diseño y publicación, y otros que solo necesitan la campaña. Armamos el plan a partir de lo que ya tienes.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">¿Cuánto tarda en salir el libro?</summary>
+            <p data-i18n="faq.a3">Depende de la extensión y del estado del manuscrito. Después de la primera conversación recibes un cronograma por escrito con cada etapa y su fecha.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">¿Trabajan con iglesias y empresas fuera de Colombia?</summary>
+            <p data-i18n="faq.a4">Sí. El trabajo se coordina en línea, en español o en inglés, y la impresión puede hacerse bajo demanda en el país donde está tu audiencia.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q5">¿Quién produce el audiolibro, el video y la música?</summary>
+            <p data-i18n="faq.a5">Seven Stars Studio, el estudio de audio y video de la plataforma. Así el sonido y la imagen del lanzamiento mantienen la misma línea que el libro.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <img class="contact__bg" src="assets/img/biblioteca.webp" alt="" aria-hidden="true" width="1800" height="1200" loading="lazy">
+      <div class="wrap contact__inner">
+        <div class="contact__text">
+          <h2 data-i18n="contact.title">Cuéntanos de tu libro.</h2>
+          <p data-i18n="contact.lead">Déjanos los datos básicos y te escribimos para agendar una primera conversación.</p>
+          <ul class="contact__data">
+            <li><span data-i18n="contact.wa">WhatsApp</span> <a href="#contacto" data-demo-wa>+57 300 555 0177</a></li>
+            <li><span data-i18n="contact.mail">Correo</span> <a href="mailto:hola@sevenstarsbooks.co">hola@sevenstarsbooks.co</a></li>
+            <li><span data-i18n="contact.where">Atención</span> <span data-i18n="contact.whereV">En línea, en español e inglés</span></li>
+          </ul>
+          <p class="demo-note demo-note--light" data-i18n="contact.note">Datos de contacto de ejemplo.</p>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="f-name" data-i18n="form.name">Nombre</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <label for="f-email" data-i18n="form.email">Correo</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form__row">
+            <label for="f-type" data-i18n="form.type">Escribo como</label>
+            <select id="f-type" name="type">
+              <option data-i18n="form.type1">Autor o autora</option>
+              <option data-i18n="form.type2">Iglesia o ministerio</option>
+              <option data-i18n="form.type3">Empresa o institución</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="f-stage" data-i18n="form.stage">¿En qué punto está el libro?</label>
+            <select id="f-stage" name="stage">
+              <option data-i18n="form.stage1">Es una idea</option>
+              <option data-i18n="form.stage2">Tengo un borrador</option>
+              <option data-i18n="form.stage3">El manuscrito está terminado</option>
+              <option data-i18n="form.stage4">Ya está publicado y quiero relanzarlo</option>
+            </select>
+          </div>
+          <div class="form__row form__row--full">
+            <label for="f-msg" data-i18n="form.msg">Mensaje</label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold" data-i18n="form.send">Enviar mensaje</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/logo-claro.webp" alt="Seven Stars Books" width="900" height="175" loading="lazy">
+        <p data-i18n="footer.line">Lanzamientos literarios de principio a fin.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Pie de página" data-i18n-attr="aria-label:footer.nav">
+        <a href="#estrellas" data-i18n="nav.services">Servicios</a>
+        <a href="#proceso" data-i18n="nav.process">Proceso</a>
+        <a href="#libreria" data-i18n="nav.books">Librería</a>
+        <a href="#planes" data-i18n="nav.plans">Planes</a>
+        <a href="#preguntas" data-i18n="nav.faq">Preguntas</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="footer__houses">
+        <p>Seven Stars Books</p>
+        <p>Seven Stars Studio</p>
+        <p>Seven Stars Marketing</p>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© 2026 Seven Stars Books</p>
+      <p data-i18n="footer.credit">Propuesta de diseño por CUARSA</p>
+    </div>
+  </footer>
+
+  <!-- CARRITO -->
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+  <aside class="drawer" id="cart" aria-labelledby="cartTitle" hidden>
+    <div class="drawer__head">
+      <h2 id="cartTitle" data-i18n="cart.title">Tu carrito</h2>
+      <button type="button" class="drawer__close" id="cartClose" aria-label="Cerrar carrito" data-i18n-attr="aria-label:cart.close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p class="drawer__empty" id="cartEmpty" data-i18n="cart.empty">Aún no agregas libros. Empieza por <em>Buen día invencible</em>.</p>
+      <ul class="drawer__items" id="cartItems"></ul>
+    </div>
+    <div class="drawer__foot" id="cartFoot" hidden>
+      <div class="drawer__total"><span data-i18n="cart.subtotal">Subtotal</span><b id="cartTotal"></b></div>
+      <fieldset class="pay">
+        <legend data-i18n="cart.pay">Método de pago</legend>
+        <label><input type="radio" name="pay" checked> <span data-i18n="pay.card">Tarjeta débito o crédito</span></label>
+        <label><input type="radio" name="pay"> <span>PSE</span></label>
+        <label><input type="radio" name="pay"> <span>PayPal</span></label>
+      </fieldset>
+      <button type="button" class="btn btn--gold btn--block" id="checkout" data-i18n="cart.checkout">Finalizar compra</button>
+      <p class="drawer__msg" id="checkoutMsg" role="status" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
