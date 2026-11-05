@@ -35,9 +35,9 @@
     <button class="header__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
       <span></span><span></span><span></span>
     </button>
-    <!-- Elementor: Site Logo -->
-    <a class="header__logo" href="#inicio" aria-label="VitGreen Natural, inicio">
-      <img src="assets/img/logo-vitgreen.webp" alt="VitGreen Natural" width="640" height="482">
+    <!-- Elementor: Site Logo. El logo SIEMPRE va dentro del círculo blanco (logo-vitgreen-circulo.webp), por indicación del cliente -->
+    <a class="header__logo logo-circ" href="#inicio" aria-label="VitGreen Natural, inicio">
+      <img src="assets/img/logo-vitgreen-circulo.webp" alt="VitGreen Natural" width="480" height="480">
     </a>
     <!-- Elementor: Search (Pro) -->
     <form class="search" role="search" onsubmit="return false">
@@ -110,7 +110,7 @@
 <div class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer__panel" role="dialog" aria-label="Menú">
     <div class="drawer__head">
-      <img src="assets/img/logo-vitgreen.webp" alt="VitGreen Natural" width="640" height="482">
+      <img class="logo-circ" src="assets/img/logo-vitgreen-circulo.webp" alt="VitGreen Natural" width="480" height="480">
       <button class="drawer__close" data-close="drawer" aria-label="Cerrar menú">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
@@ -569,7 +569,7 @@
 <footer class="footer">
   <div class="wrap footer__in">
     <div class="footer__brand">
-      <img src="assets/img/logo-vitgreen-blanco.webp" alt="VitGreen Natural" width="537" height="404" loading="lazy">
+      <img src="assets/img/logo-vitgreen-circulo.webp" alt="VitGreen Natural" width="480" height="480" loading="lazy">
       <p>Creemos en el poder de lo natural para transformar vidas.</p>
       <a class="footer__ig" href="https://www.instagram.com/vitgreennatural" target="_blank" rel="noopener" aria-label="Instagram de VitGreen Natural">
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
