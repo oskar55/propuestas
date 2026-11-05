@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>VitGreen Natural | Suplementos y productos naturales en Palmira</title>
+  <meta name="description" content="Suplementación deportiva, productos naturales, cosmética natural, alimentos saludables y café de origen. Tienda en Palmira con domicilio y pago en línea.">
+  <link rel="icon" type="image/png" href="assets/img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!--
+  Guía de réplica en WordPress + WooCommerce + Elementor Pro (sin plugins adicionales).
+  Cada bloque lleva un comentario "Elementor:" con el widget o plantilla equivalente.
+  Kit global: colores y tipografías definidos en :root (styles.css) -> Site Settings > Global Colors / Global Fonts.
+-->
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Elementor: Theme Builder > Header (sticky con Motion Effects). Contenedor superior con Text Editor + Icon List -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <p>Domicilios en Palmira</p>
+    <p class="topbar__mid">Pago seguro en línea con tarjeta o PSE</p>
+    <a href="https://wa.me/573155393097" target="_blank" rel="noopener">WhatsApp 315 539 3097</a>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <button class="header__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Elementor: Site Logo -->
+    <a class="header__logo" href="#inicio" aria-label="VitGreen Natural, inicio">
+      <img src="assets/img/logo-vitgreen.webp" alt="VitGreen Natural" width="640" height="482">
+    </a>
+    <!-- Elementor: Search (Pro) -->
+    <form class="search" role="search" onsubmit="return false">
+      <label class="sr" for="q">Buscar productos</label>
+      <input id="q" type="search" placeholder="Busca proteína, omega 3, colágeno, café…">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      </button>
+    </form>
+    <div class="header__actions">
+      <!-- Elementor: Icon (enlace a /mi-cuenta/) -->
+      <a class="icon-btn" href="#" aria-label="Mi cuenta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        <span class="icon-btn__txt">Mi cuenta</span>
+      </a>
+      <!-- Elementor: Menu Cart (WooCommerce) -->
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Abrir carrito" aria-controls="cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H7"/><circle cx="9.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></svg>
+        <span class="icon-btn__txt">Carrito</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Elementor: Menu (Pro) con Mega Menu: el ítem "Tienda" usa un dropdown de contenido -->
+  <nav class="nav" aria-label="Principal">
+    <div class="wrap">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--mega">
+          <button class="nav__link nav__mega-btn" aria-expanded="false" aria-controls="mega">Tienda
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega" id="mega">
+            <div class="wrap mega__in">
+              <div class="mega__col">
+                <a class="mega__title" href="#tienda">Suplementación deportiva</a>
+                <a href="#tienda">Proteínas</a><a href="#tienda">Creatinas</a><a href="#tienda">Pre-entrenos</a><a href="#tienda">Aminoácidos</a><a href="#tienda">Ganadores de peso</a>
+              </div>
+              <div class="mega__col">
+                <a class="mega__title" href="#tienda">Productos naturales</a>
+                <a href="#tienda">Vitaminas</a><a href="#tienda">Minerales</a><a href="#tienda">Omegas</a><a href="#tienda">Colágeno</a><a href="#tienda">Digestión</a>
+              </div>
+              <div class="mega__col">
+                <a class="mega__title" href="#categorias">Cosmética natural</a>
+                <a href="#categorias">Rostro</a><a href="#categorias">Cabello</a><a href="#categorias">Cuerpo</a>
+                <a class="mega__title mega__title--gap" href="#categorias">Alimentos saludables</a>
+                <a href="#categorias">Snacks</a><a href="#categorias">Miel y endulzantes</a><a href="#categorias">Semillas y granolas</a>
+              </div>
+              <a class="mega__promo" href="#cafe">
+                <span class="mega__promo-k">Café de origen</span>
+                <span class="mega__promo-t">Pídelo junto con tus suplementos en el mismo domicilio</span>
+                <span class="mega__promo-l">Ver cafés</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#deportiva">Deportiva</a></li>
+        <li class="nav__item"><a class="nav__link" href="#tienda">Naturales</a></li>
+        <li class="nav__item"><a class="nav__link" href="#categorias">Cosmética</a></li>
+        <li class="nav__item"><a class="nav__link" href="#categorias">Alimentos</a></li>
+        <li class="nav__item"><a class="nav__link" href="#cafe">Café de origen</a></li>
+        <li class="nav__item"><a class="nav__link" href="#comunidad">Nosotros</a></li>
+        <li class="nav__item"><a class="nav__link" href="#visitanos">Visítanos</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Elementor: Off-Canvas (Pro) para menú móvil -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__panel" role="dialog" aria-label="Menú">
+    <div class="drawer__head">
+      <img src="assets/img/logo-vitgreen.webp" alt="VitGreen Natural" width="640" height="482">
+      <button class="drawer__close" data-close="drawer" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <form class="search search--drawer" role="search" onsubmit="return false">
+      <label class="sr" for="q2">Buscar productos</label>
+      <input id="q2" type="search" placeholder="Buscar productos">
+      <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+    </form>
+    <ul class="drawer__nav">
+      <li><a href="#deportiva">Suplementación deportiva</a></li>
+      <li><a href="#tienda">Productos naturales</a></li>
+      <li><a href="#categorias">Cosmética natural</a></li>
+      <li><a href="#categorias">Alimentos saludables</a></li>
+      <li><a href="#cafe">Café de origen</a></li>
+      <li><a href="#comunidad">Nosotros</a></li>
+      <li><a href="#visitanos">Visítanos</a></li>
+    </ul>
+    <a class="btn btn--wa drawer__wa" href="https://wa.me/573155393097" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  </div>
+</div>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============
+       Elementor: Contenedor 2 columnas. Heading + Text Editor + 2 Buttons + Icon List.
+       Sol: Image (SVG) con Entrance Animation "Rotate In" o Motion Effects > Rotate. Foto: Image con máscara (Mask, Elementor 3.x) o border-radius en Custom CSS. -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="hero__place">Paraíso La Italia, Palmira</p>
+        <h1 class="hero__title">Lo natural también entrena</h1>
+        <p class="hero__lead">Proteína para el gimnasio, omega y colágeno para el día a día, y café de origen para la mañana. En VitGreen lo encuentras en un solo lugar y te lo llevamos a domicilio.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#tienda">Comprar ahora</a>
+          <a class="btn btn--ghost" href="https://wa.me/573155393097?text=Hola%20VitGreen%2C%20quiero%20asesor%C3%ADa%20para%20elegir%20un%20suplemento" target="_blank" rel="noopener">Pedir asesoría por WhatsApp</a>
+        </div>
+        <ul class="hero__facts">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg>Domicilio en Palmira</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>Pago seguro en línea</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg>Marcas que conoces</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <svg class="sun" viewBox="0 0 400 400" aria-hidden="true">
+          <defs>
+            <radialGradient id="sunG" cx="40%" cy="38%" r="70%">
+              <stop offset="0" stop-color="#FFE15A"/>
+              <stop offset=".55" stop-color="#FBBA00"/>
+              <stop offset="1" stop-color="#F39200"/>
+            </radialGradient>
+          </defs>
+          <g class="sun__rays" stroke="#FBBA00" stroke-width="16" stroke-linecap="round">
+            <line x1="200" y1="20" x2="200" y2="58"/>
+            <line x1="290" y1="44" x2="271" y2="77"/>
+            <line x1="356" y1="110" x2="323" y2="129"/>
+            <line x1="380" y1="200" x2="342" y2="200"/>
+            <line x1="110" y1="44" x2="129" y2="77"/>
+            <line x1="44" y1="110" x2="77" y2="129"/>
+            <line x1="20" y1="200" x2="58" y2="200"/>
+          </g>
+          <circle class="sun__core" cx="200" cy="200" r="118" fill="url(#sunG)"/>
+        </svg>
+        <figure class="hero__photo">
+          <img src="assets/img/equipo-vitgreen.webp" alt="Equipo de VitGreen Natural en su stand de suplementación deportiva, con un frasco de suplemento y un vaso de muestra" width="1100" height="1100" fetchpriority="high">
+        </figure>
+        <!-- Elementor: Loop Item (plantilla de producto) en un Loop Grid de 1 producto destacado -->
+        <article class="hero__pick">
+          <img src="assets/img/productos/best-whey.webp" alt="" width="800" height="800">
+          <div>
+            <p class="hero__pick-k">Producto destacado</p>
+            <p class="hero__pick-n">Best Whey de ProScience</p>
+            <p class="hero__pick-p">$185.000</p>
+          </div>
+          <button class="hero__pick-add add" data-id="best-whey" aria-label="Agregar Best Whey al carrito">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORÍAS ============
+       Elementor: Contenedor Grid (5 columnas desktop / scroll horizontal móvil). Cada tarjeta = Contenedor con enlace a la categoría de producto + Heading + Image. -->
+  <section class="cats" id="categorias" aria-labelledby="cats-t">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="cats-t">Compra por categoría</h2>
+        <p>Cinco líneas, una sola tienda. Elige por dónde empezar.</p>
+      </div>
+      <div class="cats__grid">
+        <a class="cat cat--sport" href="#deportiva">
+          <span class="cat__name">Suplementación deportiva</span>
+          <span class="cat__sub">Proteínas, creatinas, pre-entrenos y aminoácidos</span>
+          <img class="cat__img" src="assets/img/productos/best-whey-recorte.webp" alt="" width="672" height="608" loading="lazy">
+        </a>
+        <a class="cat cat--nat" href="#tienda">
+          <span class="cat__name">Productos naturales</span>
+          <span class="cat__sub">Vitaminas, minerales, omegas y colágeno</span>
+          <img class="cat__img cat__img--mult" src="assets/img/productos/omega3.webp" alt="" width="800" height="800" loading="lazy">
+        </a>
+        <a class="cat cat--cosm" href="#categorias">
+          <span class="cat__name">Cosmética natural</span>
+          <span class="cat__sub">Cuidado de piel y cabello con ingredientes naturales</span>
+          <svg class="cat__ill" viewBox="0 0 200 200" aria-hidden="true">
+            <path d="M120 52c26-30 62-26 62-26s2 38-28 58c-18 12-34 8-34 8s-10-20 0-40z" fill="#8DC63F"/>
+            <path d="M126 88c14-16 34-36 50-56" stroke="#2F7D3A" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <rect x="62" y="22" width="26" height="30" rx="8" fill="#1E4D2B"/>
+            <rect x="56" y="48" width="38" height="14" rx="4" fill="#2F7D3A"/>
+            <path d="M48 70c0-6 4-10 10-10h34c6 0 10 4 10 10v100c0 8-6 14-14 14H62c-8 0-14-6-14-14z" fill="#FFFFFF"/>
+            <rect x="58" y="104" width="34" height="40" rx="6" fill="#E8F3D2"/>
+            <circle cx="75" cy="124" r="9" fill="#FBBA00"/>
+          </svg>
+        </a>
+        <a class="cat cat--food" href="#categorias">
+          <span class="cat__name">Alimentos saludables</span>
+          <span class="cat__sub">Snacks, miel, semillas y granolas</span>
+          <svg class="cat__ill" viewBox="0 0 200 200" aria-hidden="true">
+            <rect x="56" y="40" width="88" height="22" rx="6" fill="#2F7D3A"/>
+            <path d="M50 70c0-6 4-10 10-10h80c6 0 10 4 10 10v92c0 12-10 22-22 22H72c-12 0-22-10-22-22z" fill="#F39200"/>
+            <path d="M50 96h100v40H50z" fill="#FBBA00"/>
+            <path d="M88 116l12-7 12 7v14l-12 7-12-7z" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+            <path d="M130 30c6 10 4 20-4 24" stroke="#1E4D2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a class="cat cat--cafe" href="#cafe">
+          <span class="cat__name">Café de origen</span>
+          <span class="cat__sub">Para preparar en casa o pedir con tu domicilio</span>
+          <svg class="cat__ill" viewBox="0 0 200 200" aria-hidden="true">
+            <path d="M92 28c-12 14 12 22 0 38M114 28c-12 14 12 22 0 38" stroke="#1E4D2B" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M40 82h112v34c0 34-24 58-56 58S40 150 40 116z" fill="#FFFFFF"/>
+            <path d="M152 92h10c12 0 20 8 20 20s-8 20-20 20h-14" stroke="#FFFFFF" stroke-width="10" fill="none"/>
+            <ellipse cx="96" cy="124" rx="16" ry="22" fill="#5A3A22"/>
+            <path d="M96 104c-6 12 6 28 0 40" stroke="#F8D9AE" stroke-width="4" fill="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS ============
+       Elementor: Taxonomy Filter (Pro) conectado a un Loop Grid de productos (query: product, destacados).
+       La tarjeta es un Loop Item: Featured Image + Product Title + Product Price + Add To Cart (WooCommerce). Insignia "Oferta" = widget nativo de WooCommerce (Sale badge). -->
+  <section class="shop" id="tienda" aria-labelledby="shop-t">
+    <div class="wrap">
+      <div class="sec-head sec-head--row">
+        <div>
+          <h2 id="shop-t">Productos destacados</h2>
+          <p>Lo que encuentras en la tienda de Paraíso La Italia, ahora con compra en línea.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Filtrar productos">
+          <button class="tab is-on" role="tab" aria-selected="true" data-filter="top">Destacados</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="sport">Deportiva</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="nat">Naturales</button>
+        </div>
+      </div>
+      <p class="demo-note">Productos de marcas que vende VitGreen. Precios de referencia: contenido de ejemplo para la demo.</p>
+      <div class="grid" id="grid">
+        <article class="card" data-cat="sport top" data-id="best-whey" data-name="Best Whey, proteína de suero" data-brand="ProScience" data-price="185000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/best-whey.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">ProScience <span>· Proteínas</span></p>
+            <h3 class="card__name"><a href="#tienda">Best Whey, proteína de suero</a></h3>
+            <p class="card__price"><span class="card__now">$185.000</span></p>
+            <button class="card__add add" data-id="best-whey">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat top" data-id="omega3" data-name="Omega-3 Fish Oil 1.200 mg, 100 cápsulas" data-brand="Healthy America" data-price="63000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-10%</span><img src="assets/img/productos/omega3.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Omegas</span></p>
+            <h3 class="card__name"><a href="#tienda">Omega-3 Fish Oil 1.200 mg, 100 cápsulas</a></h3>
+            <p class="card__price"><span class="card__now">$63.000</span><s class="card__old"><span class="sr">Antes </span>$70.000</s></p>
+            <button class="card__add add" data-id="omega3">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="sport top" data-id="intenze" data-name="Intenze pre-entreno, 30 servicios" data-brand="ProScience" data-price="145000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/intenze.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">ProScience <span>· Pre-entrenos</span></p>
+            <h3 class="card__name"><a href="#tienda">Intenze pre-entreno, 30 servicios</a></h3>
+            <p class="card__price"><span class="card__now">$145.000</span></p>
+            <button class="card__add add" data-id="intenze">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat top" data-id="colageno" data-name="Colágeno hidrolizado con vitamina C, 100 cápsulas" data-brand="Healthy America" data-price="61600">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-20%</span><img src="assets/img/productos/colageno.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Colágeno</span></p>
+            <h3 class="card__name"><a href="#tienda">Colágeno hidrolizado con vitamina C, 100 cápsulas</a></h3>
+            <p class="card__price"><span class="card__now">$61.600</span><s class="card__old"><span class="sr">Antes </span>$77.000</s></p>
+            <button class="card__add add" data-id="colageno">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="sport top" data-id="legacy-50" data-name="Legacy creatina HCL, 50 servicios" data-brand="ProScience" data-price="130000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/legacy-50.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">ProScience <span>· Creatinas</span></p>
+            <h3 class="card__name"><a href="#tienda">Legacy creatina HCL, 50 servicios</a></h3>
+            <p class="card__price"><span class="card__now">$130.000</span></p>
+            <button class="card__add add" data-id="legacy-50">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat top" data-id="vitc" data-name="Vitamina C 1.000 mg con zinc, 100 tabletas" data-brand="Healthy America" data-price="55250">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-15%</span><img src="assets/img/productos/vitc.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Vitaminas</span></p>
+            <h3 class="card__name"><a href="#tienda">Vitamina C 1.000 mg con zinc, 100 tabletas</a></h3>
+            <p class="card__price"><span class="card__now">$55.250</span><s class="card__old"><span class="sr">Antes </span>$65.000</s></p>
+            <button class="card__add add" data-id="vitc">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="sport top" data-id="coyote" data-name="Coyote pre-entreno en polvo" data-brand="Fitmafia" data-price="59000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/coyote.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Fitmafia <span>· Pre-entrenos</span></p>
+            <h3 class="card__name"><a href="#tienda">Coyote pre-entreno en polvo</a></h3>
+            <p class="card__price"><span class="card__now">$59.000</span></p>
+            <button class="card__add add" data-id="coyote">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat top" data-id="magnesium" data-name="Super Magnesium 400 mg, 100 cápsulas" data-brand="Healthy America" data-price="85000">
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/magnesium.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Minerales</span></p>
+            <h3 class="card__name"><a href="#tienda">Super Magnesium 400 mg, 100 cápsulas</a></h3>
+            <p class="card__price"><span class="card__now">$85.000</span></p>
+            <button class="card__add add" data-id="magnesium">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat" data-id="biotin" data-name="Biotina 900 mcg, 120 cápsulas" data-brand="Healthy America" data-price="50000" hidden>
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/productos/biotin.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Cabello y uñas</span></p>
+            <h3 class="card__name"><a href="#tienda">Biotina 900 mcg, 120 cápsulas</a></h3>
+            <p class="card__price"><span class="card__now">$50.000</span></p>
+            <button class="card__add add" data-id="biotin">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat" data-id="curcuma" data-name="Cúrcuma y jengibre, 60 gomitas" data-brand="Healthy America" data-price="48000" hidden>
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-20%</span><img src="assets/img/productos/curcuma.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Bienestar</span></p>
+            <h3 class="card__name"><a href="#tienda">Cúrcuma y jengibre, 60 gomitas</a></h3>
+            <p class="card__price"><span class="card__now">$48.000</span><s class="card__old"><span class="sr">Antes </span>$60.000</s></p>
+            <button class="card__add add" data-id="curcuma">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat" data-id="espirulina" data-name="Espirulina 1.200 mg" data-brand="Healthy America" data-price="58500" hidden>
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-10%</span><img src="assets/img/productos/espirulina.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Superalimentos</span></p>
+            <h3 class="card__name"><a href="#tienda">Espirulina 1.200 mg</a></h3>
+            <p class="card__price"><span class="card__now">$58.500</span><s class="card__old"><span class="sr">Antes </span>$65.000</s></p>
+            <button class="card__add add" data-id="espirulina">Agregar al carrito</button>
+          </div>
+        </article>
+        <article class="card" data-cat="nat" data-id="te-verde" data-name="Extracto de té verde 320 mg, 60 cápsulas" data-brand="Healthy America" data-price="31800" hidden>
+          <a class="card__media" href="#tienda" tabindex="-1" aria-hidden="true">
+            <span class="card__badge">-40%</span><img src="assets/img/productos/te-verde.webp" alt="" width="800" height="800" loading="lazy">
+          </a>
+          <div class="card__body">
+            <p class="card__brand">Healthy America <span>· Metabolismo</span></p>
+            <h3 class="card__name"><a href="#tienda">Extracto de té verde 320 mg, 60 cápsulas</a></h3>
+            <p class="card__price"><span class="card__now">$31.800</span><s class="card__old"><span class="sr">Antes </span>$53.000</s></p>
+            <button class="card__add add" data-id="te-verde">Agregar al carrito</button>
+          </div>
+        </article>
+      </div>
+      <div class="shop__more"><a class="btn btn--outline" href="#tienda">Ver toda la tienda</a></div>
+    </div>
+  </section>
+
+  <!-- ============ DEPORTIVA (bloque oscuro) ============
+       Elementor: Contenedor con fondo #1E4D2B. Heading + Text + Buttons (objetivos, enlazan a categorías filtradas) + Images superpuestas con posición absoluta. -->
+  <section class="sport" id="deportiva" aria-labelledby="sport-t">
+    <div class="wrap sport__in">
+      <div class="sport__copy">
+        <h2 id="sport-t" class="sport__title"><span>Energía.</span> <span>Fuerza.</span> <span>Rendimiento.</span></h2>
+        <p>Es lo que dice nuestro stand y lo que buscamos con cada recomendación. Cuéntanos qué entrenas y para qué, y te ayudamos a elegir antes de que compres.</p>
+        <p class="sport__k" id="goals-t">Compra por objetivo</p>
+        <ul class="goals" aria-labelledby="goals-t">
+          <li><a href="#tienda" data-goto="sport">Ganar masa muscular</a></li>
+          <li><a href="#tienda" data-goto="sport">Fuerza y potencia</a></li>
+          <li><a href="#tienda" data-goto="sport">Energía para entrenar</a></li>
+          <li><a href="#tienda" data-goto="sport">Recuperación</a></li>
+          <li><a href="#tienda" data-goto="nat">Defensas</a></li>
+          <li><a href="#tienda" data-goto="nat">Piel, cabello y uñas</a></li>
+        </ul>
+        <a class="btn btn--sun" href="https://wa.me/573155393097?text=Hola%20VitGreen%2C%20quiero%20asesor%C3%ADa%20seg%C3%BAn%20mi%20objetivo" target="_blank" rel="noopener">Pedir asesoría por WhatsApp</a>
+      </div>
+      <div class="sport__visual" aria-hidden="true">
+        <div class="sport__disc"></div>
+        <img class="sport__p sport__p--a" src="assets/img/productos/best-whey-recorte.webp" alt="" width="672" height="608" loading="lazy">
+        <img class="sport__p sport__p--b" src="assets/img/productos/intenze-recorte.webp" alt="" width="672" height="507" loading="lazy">
+        <img class="sport__p sport__p--c" src="assets/img/productos/coyote-recorte.webp" alt="" width="672" height="669" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAFÉ ============
+       Elementor: Contenedor 2 columnas. Image + Heading + Blockquote/Text + Button. -->
+  <section class="cafe" id="cafe" aria-labelledby="cafe-t">
+    <div class="wrap cafe__in">
+      <div class="cafe__art" aria-hidden="true">
+        <svg viewBox="0 0 420 360">
+          <circle cx="250" cy="150" r="120" fill="#FBBA00" opacity=".9"/>
+          <g fill="#5A3A22">
+            <ellipse cx="96" cy="292" rx="26" ry="36" transform="rotate(-30 96 292)"/>
+            <ellipse cx="160" cy="318" rx="22" ry="31" transform="rotate(20 160 318)"/>
+            <ellipse cx="350" cy="300" rx="24" ry="34" transform="rotate(40 350 300)"/>
+          </g>
+          <g stroke="#F8D9AE" stroke-width="5" fill="none" stroke-linecap="round">
+            <path d="M88 266c-12 18 18 34 6 54"/><path d="M154 294c-8 16 14 30 4 46"/><path d="M344 274c-10 18 16 32 8 52"/>
+          </g>
+          <path d="M120 150h170v50c0 52-38 90-85 90s-85-38-85-90z" fill="#FFFFFF"/>
+          <path d="M290 164h16c20 0 32 13 32 31s-12 31-32 31h-22" stroke="#FFFFFF" stroke-width="16" fill="none"/>
+          <path d="M150 120c-18 22 18 32 0 56M205 104c-18 22 18 32 0 56M260 120c-18 22 18 32 0 56" stroke="#1E4D2B" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <path d="M184 210c22-30 56-28 56-28s0 34-28 46c-16 7-30 2-30 2s-6-10 2-20z" fill="#8DC63F"/>
+        </svg>
+      </div>
+      <div class="cafe__copy">
+        <h2 id="cafe-t">Café de origen</h2>
+        <blockquote>“Un café de origen que enamora el alma.”</blockquote>
+        <p>Así lo presentamos en la tienda, y por eso tiene su propia sección. Pídelo junto con tus suplementos y te llega en el mismo domicilio, o pásate a probarlo en Paraíso La Italia.</p>
+        <a class="btn btn--primary" href="#cafe">Ver cafés</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMUNIDAD ============
+       Elementor: Heading + Text + Gallery (Pro, diseño "Justified" o "Masonry") + Button a Instagram. -->
+  <section class="comm" id="comunidad" aria-labelledby="comm-t">
+    <div class="wrap">
+      <div class="comm__head">
+        <h2 id="comm-t">Nos ves en la ruta</h2>
+        <p>En Kilómetros Rosa V2 montamos stand de suplementación deportiva y productos naturales, y acompañamos a las corredoras antes y después de la carrera. VitGreen no es solo una tienda en Paraíso La Italia: también sale a donde se entrena.</p>
+        <a class="link" href="https://www.instagram.com/vitgreennatural" target="_blank" rel="noopener">Síguenos en Instagram @vitgreennatural</a>
+      </div>
+      <div class="gallery">
+        <figure class="g g--a"><img src="assets/img/corredoras-kilometros-rosa.webp" alt="Corredoras con camiseta rosa calentando antes de Kilómetros Rosa, frente al stand de VitGreen" width="1200" height="687" loading="lazy"></figure>
+        <figure class="g g--b"><img src="assets/img/stand-kilometros-rosa.webp" alt="Stand de VitGreen con pendones de suplementación deportiva y productos naturales" width="1000" height="839" loading="lazy"></figure>
+        <figure class="g g--c"><img src="assets/img/grupo-kilometros-rosa.webp" alt="Grupo de participantes y equipo de apoyo celebrando al final de Kilómetros Rosa" width="1000" height="1000" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONFIANZA + MARCAS ============
+       Elementor: Icon Box x4 + Heading/Text para marcas (o Image Carousel con logos autorizados por cada marca). -->
+  <section class="trust" aria-label="Por qué comprar en VitGreen">
+    <div class="wrap">
+      <ul class="trust__list">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg>
+          <h3>Domicilios en Palmira</h3>
+          <p>Pide en línea o por WhatsApp y te lo llevamos.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <h3>Pago seguro</h3>
+          <p>Tarjeta débito o crédito y PSE desde el checkout.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19l1.5-4.5A8 8 0 1 1 9 18z"/></svg>
+          <h3>Asesoría antes de comprar</h3>
+          <p>Te ayudamos a elegir según tu objetivo.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+          <h3>Marcas reconocidas</h3>
+          <p>Productos originales de proveedores conocidos.</p>
+        </li>
+      </ul>
+      <div class="brands">
+        <p class="brands__k">Marcas que encuentras en VitGreen</p>
+        <ul class="brands__list">
+          <li>ProScience</li><li>Nutramerican</li><li>Healthy America</li><li>Fitmafia</li><li>y más</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISÍTANOS ============
+       Elementor: Icon List (dirección, WhatsApp, horario) + Google Maps (widget nativo). -->
+  <section class="visit" id="visitanos" aria-labelledby="visit-t">
+    <div class="wrap visit__in">
+      <div class="visit__copy">
+        <h2 id="visit-t">Visítanos</h2>
+        <ul class="visit__list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <div><strong>Calle 6 #29A-39</strong><br>Barrio Paraíso La Italia, Palmira, Valle del Cauca</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19l1.5-4.5A8 8 0 1 1 9 18z"/></svg>
+            <div><strong>WhatsApp 315 539 3097</strong><br>Pedidos, domicilios y asesoría</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><strong>Horario de atención</strong><br><span class="tbd">Por confirmar con el cliente</span></div>
+          </li>
+        </ul>
+        <div class="visit__ctas">
+          <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&query=Calle+6+%2329A-39+Para%C3%ADso+La+Italia+Palmira+Valle+del+Cauca" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--outline" href="https://wa.me/573155393097" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+      <div class="visit__map">
+        <iframe title="Mapa de VitGreen Natural en Palmira" src="https://maps.google.com/maps?q=Calle%206%20%2329A-39%2C%20Palmira%2C%20Valle%20del%20Cauca&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUSCRIPCIÓN ============
+       Elementor: Form (Pro) con acción "Collect Submissions" o Email. -->
+  <section class="news" aria-labelledby="news-t">
+    <div class="wrap news__in">
+      <div>
+        <h2 id="news-t">Ofertas y lanzamientos, primero para ti</h2>
+        <p>Un correo cuando llegan productos nuevos o hay promociones en la tienda. Nada más.</p>
+      </div>
+      <form class="news__form" id="newsForm" novalidate>
+        <label class="sr" for="email">Correo electrónico</label>
+        <input id="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+        <button class="btn btn--sun" type="submit">Suscribirme</button>
+        <p class="news__msg" id="newsMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Elementor: Theme Builder > Footer -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <img src="assets/img/logo-vitgreen-blanco.webp" alt="VitGreen Natural" width="537" height="404" loading="lazy">
+      <p>Creemos en el poder de lo natural para transformar vidas.</p>
+      <a class="footer__ig" href="https://www.instagram.com/vitgreennatural" target="_blank" rel="noopener" aria-label="Instagram de VitGreen Natural">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        @vitgreennatural
+      </a>
+    </div>
+    <div class="footer__col">
+      <h3>Tienda</h3>
+      <ul>
+        <li><a href="#deportiva">Suplementación deportiva</a></li>
+        <li><a href="#tienda">Productos naturales</a></li>
+        <li><a href="#categorias">Cosmética natural</a></li>
+        <li><a href="#categorias">Alimentos saludables</a></li>
+        <li><a href="#cafe">Café de origen</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Ayuda</h3>
+      <ul>
+        <li><a href="#">Envíos y domicilios</a></li>
+        <li><a href="#">Cambios y devoluciones</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Tratamiento de datos personales</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Contacto</h3>
+      <ul>
+        <li>Calle 6 #29A-39, Paraíso La Italia, Palmira</li>
+        <li><a href="https://wa.me/573155393097" target="_blank" rel="noopener">WhatsApp 315 539 3097</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__base">
+    <p>© 2026 VitGreen Natural. Los suplementos no reemplazan una alimentación balanceada.</p>
+    <p>Propuesta de diseño por CUARSA</p>
+  </div>
+</footer>
+
+<!-- Elementor: Floating Buttons (WhatsApp, nativo de Elementor) -->
+<a class="wa-float" href="https://wa.me/573155393097?text=Hola%20VitGreen" target="_blank" rel="noopener" aria-label="Escribir a VitGreen por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.3z"/></svg>
+</a>
+
+<!-- Elementor: Menu Cart > Mini Cart tipo "Side cart" (nativo de Elementor Pro) -->
+<div class="cart" id="cart" aria-hidden="true">
+  <div class="cart__panel" role="dialog" aria-labelledby="cart-t">
+    <div class="cart__head">
+      <h2 id="cart-t">Tu carrito</h2>
+      <button class="drawer__close" data-close="cart" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="cart__items" id="cartItems"></ul>
+    <div class="cart__empty" id="cartEmpty">
+      <p>Tu carrito está vacío.</p>
+      <a class="btn btn--outline" href="#tienda" data-close="cart">Ver productos</a>
+    </div>
+    <div class="cart__foot" id="cartFoot">
+      <div class="cart__sum"><span>Subtotal</span><strong id="cartTotal">$0</strong></div>
+      <p class="cart__note">Envío y pago se calculan en el checkout.</p>
+      <button class="btn btn--primary cart__go" id="checkoutBtn">Finalizar compra</button>
+      <p class="cart__demo" id="checkoutMsg" role="status"></p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
